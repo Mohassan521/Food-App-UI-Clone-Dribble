@@ -1,3 +1,4 @@
+import 'package:api_testing/fourth_screen.dart';
 import 'package:api_testing/home.dart';
 import 'package:api_testing/second_screen.dart';
 import 'package:api_testing/third_screen.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white70),
         useMaterial3: true,
       ),
-      home: const ThirdScreen(),
+      home: FoodItemDetailPage(),
     );
   }
 }

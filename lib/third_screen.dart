@@ -46,9 +46,9 @@ class ThirdScreen extends StatelessWidget {
             SizedBox(
               height: 22,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20.0),
-              child: const Text(
+            const Padding(
+              padding: EdgeInsets.only(left: 20.0),
+              child: Text(
                 "Search by Ingredients",
                 style: TextStyle(
                     color: Colors.black,
@@ -153,7 +153,7 @@ class ThirdScreen extends StatelessWidget {
                   ),
                   PreferenceTiles(
                     image: "https://cdn.dummyjson.com/recipe-images/3.webp",
-                    text: "Chocolate Cookies",
+                    text: "Chocolate chip Cookies",
                   ),
                 ],
               ),
@@ -287,7 +287,7 @@ class PreferenceTiles extends StatelessWidget {
                   right: 10,
                   bottom: 10,
                   child: Container(
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       color: Colors.black54,
                       borderRadius: BorderRadius.circular(10),
