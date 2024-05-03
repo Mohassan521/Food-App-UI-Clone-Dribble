@@ -1,3 +1,4 @@
+import 'package:api_testing/utils/bottom_navbar.dart';
 import 'package:api_testing/utils/smart_device_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -41,10 +42,10 @@ class _SixthScreenState extends State<SixthScreen> {
                   Icon(
                     Icons.notifications,
                     color: Colors.white,
-                    size: MediaQuery.sizeOf(context).height * 0.045,
+                    size: MediaQuery.sizeOf(context).height * 0.040,
                   ),
                   SizedBox(
-                    width: 10,
+                    width: 20,
                   ),
                   ClipRRect(
                       borderRadius: BorderRadius.circular(20),
@@ -127,9 +128,11 @@ class _SixthScreenState extends State<SixthScreen> {
                         powerOn: mySmartDevices[index][2],
                         onChanged: (value) => powerSwitchChanged(value, index),
                       );
-                    }))
+                    })),
 
             //
+
+            const BottomNavBar()
           ],
         ),
       ),
