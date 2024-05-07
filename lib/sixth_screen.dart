@@ -1,7 +1,6 @@
 import 'package:api_testing/utils/bottom_navbar.dart';
 import 'package:api_testing/utils/smart_device_box.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class SixthScreen extends StatefulWidget {
   const SixthScreen({super.key});
@@ -60,16 +59,17 @@ class _SixthScreenState extends State<SixthScreen> {
               height: 20,
             ),
 
-            Text(
+            const Text(
               "Welcome, Hassooo",
               style: TextStyle(color: Colors.white, fontSize: 30),
             ),
             SizedBox(
               height: 8,
             ),
+            //
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
+              children: const [
                 Row(
                   children: [
                     Icon(
@@ -112,7 +112,7 @@ class _SixthScreenState extends State<SixthScreen> {
               "Widgets",
               style: TextStyle(color: Colors.white, fontSize: 28),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Expanded(
@@ -120,7 +120,7 @@ class _SixthScreenState extends State<SixthScreen> {
                     itemCount: mySmartDevices.length,
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2, childAspectRatio: 1 / 1.35),
+                            crossAxisCount: 2, childAspectRatio: 1 / 1.33),
                     itemBuilder: (context, index) {
                       return SmartDeviceBox(
                         smartDeviceName: mySmartDevices[index][0],
@@ -132,7 +132,7 @@ class _SixthScreenState extends State<SixthScreen> {
 
             //
 
-            const BottomNavBar()
+            BottomNavBar()
           ],
         ),
       ),

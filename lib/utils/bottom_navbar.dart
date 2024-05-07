@@ -9,7 +9,7 @@ class BottomNavBar extends StatelessWidget {
     return Container(
       color: Colors.black,
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 20),
+        padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 15),
         child: GNav(
             activeColor: Colors.white,
             tabBackgroundColor: Colors.grey.shade600,
@@ -20,7 +20,8 @@ class BottomNavBar extends StatelessWidget {
             tabs: [
               GButton(
                 icon: Icons.home,
-                text: "Home",
+                iconColor: Colors.grey,
+                backgroundColor: Colors.transparent,
               ),
               GButton(
                 icon: Icons.favorite,

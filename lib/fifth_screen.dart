@@ -91,7 +91,7 @@ class GymAppDesign extends StatelessWidget {
           const SizedBox(
             height: 15,
           ),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Column(
