@@ -21,6 +21,12 @@ class SeventhScreen extends StatelessWidget {
         "\$12.00",
         "Black color polo shirt for men in half sleeves, stylish in design"
       ],
+      [
+        "lib/images/polo2.jpg",
+        "Olive Color black Polo Shirt For Men",
+        "\$12.00",
+        "Black color polo shirt for men in half sleeves, stylish in design"
+      ],
     ];
 
     return Scaffold(
@@ -155,8 +161,8 @@ class SeventhScreen extends StatelessWidget {
               height: 10,
             ),
             ConstrainedBox(
-              constraints: BoxConstraints(
-                  maxHeight: MediaQuery.sizeOf(context).height * 0.75),
+              constraints:
+                  BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height),
               child: GridView.builder(
                   itemCount: products.length,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
